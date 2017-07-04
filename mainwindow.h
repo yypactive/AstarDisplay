@@ -24,6 +24,14 @@ public:
     ~MainWindow();
 
 private:
+    void initConnect();
+
+public slots:
+    void startGame();
+    void LoadMap();
+    void endGame();
+
+private:
 
     ViewWidget * mViewWidget;
 
@@ -35,8 +43,7 @@ private:
 
     QHBoxLayout * mButtonLayout;
     QHBoxLayout * mLogLayout;
-    QVBoxLayout * mMainLayout;
-
+    QGridLayout * mMainLayout;
 
 };
 
