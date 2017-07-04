@@ -2,6 +2,18 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QPushButton>
+#include <QHBoxLayout>
+#include <QVBoxLayout>
+#include <QSplitter>
+
+#include <QtWidgets/QDialog>
+#include <QLabel>
+#include <QHBoxLayout>
+#include <QVBoxLayout>
+#include <QPushButton>
+
+#include "viewwidget.h"
 
 class MainWindow : public QMainWindow
 {
@@ -12,13 +24,20 @@ public:
     ~MainWindow();
 
 private:
-    QVBoxLayout *mMainLayout;
-    QHBoxLayout *mButtonLayout;
 
-    //button
-    QPushButton *mStartGame;
-    QPushButton *mLoadMap;
-    QPushButton *mEndGame;
+    ViewWidget * mViewWidget;
+
+    QPushButton * mStartButton;
+    QPushButton * mLoadButton;
+    QPushButton * mEndButton;
+
+    QLabel * mLogLabel;
+
+    QHBoxLayout * mButtonLayout;
+    QHBoxLayout * mLogLayout;
+    QVBoxLayout * mMainLayout;
+
+
 };
 
 #endif // MAINWINDOW_H
