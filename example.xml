@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<maps> 
+  <map name="example"> 
+    <sizeX>4</sizeX>  
+    <sizeY>4</sizeY>  
+    <block> 
+      <x>1</x>  
+      <y>1</y> 
+    </block>  
+    <block> 
+      <x>2</x>  
+      <y>2</y> 
+    </block> 
+  </map> 
+</maps>
